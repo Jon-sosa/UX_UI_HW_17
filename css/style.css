@@ -95,3 +95,93 @@ button:hover {
 .footer-menu li a:hover {
     color: #555;
   }
+
+
+  /* Skills and Work Section */
+
+h1 {
+  text-align: center;
+}
+
+.skillsImg {
+  width: 100%;
+  height: auto;
+}
+
+.flexContainer {
+  display: flex;
+}
+
+.flexContainer div {
+  background-color: rgb(226, 226, 226);
+  width: 33%;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.workGrid {
+  display: grid;
+  background-color: lightgray;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+  "csimage1 cscontent1 cscontent1"
+  "csimage2 cscontent2 cscontent2"
+  "csimage3 cscontent3 cscontent3";
+  grid-gap: 20px;
+}
+
+.csimage1 {
+  grid-area: csimage1;
+}
+
+.cscontent1 {
+  grid-area: cscontent1;
+}
+
+.csimage2 {
+  grid-area: csimage2;
+}
+
+.cscontent2 {
+  grid-area: cscontent2;
+}
+
+.csimage3 {
+  grid-area: csimage3;
+}
+
+.cscontent3 {
+  grid-area: cscontent3;
+}
+/* .grid-container {
+  grid-template-areas:
+    "csimage1 cscontent1"
+    "csimage2 cscontent2"
+    "csimage3 cscontent3";
+} */
+
+@media (max-width: 600px) {
+
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }  
+
+.workGrid {
+    display: grid;
+    background-color: lightgray;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "csimage1"
+    "cscontent1"
+    "csimage2"
+    "cscontent2"
+    "csimage3"
+    "cscontent3";
+    grid-gap: 20px;
+  }  
+}
